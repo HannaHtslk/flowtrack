@@ -1,0 +1,8 @@
+.faq {
+  background: var(--color-bg-primary);
+}
+
+.faq__list {
+  max-width: 680px;
+  margin: 0 auto;
+}

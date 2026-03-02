@@ -1,0 +1,126 @@
+.automation {
+  background: var(--color-bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .automation {
+  background: var(--color-bg-glass);
+}
+
+.automation__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .automation__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.automation__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.automation__sub {
+  font-size: 1.0625rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.automation__bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.automation__bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.automation__check {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Flow diagram */
+.automation__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  max-width: 340px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+}
+
+.flow__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.flow__item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.flow__step {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flow__step-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 100px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.flow__step-detail {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-align: right;
+}
+
+.flow__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  padding: 0.375rem 0;
+}
