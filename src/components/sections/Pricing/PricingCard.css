@@ -1,0 +1,103 @@
+.pricing-card {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pricing-card--highlighted {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.pricing-card__popular {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing-card__name {
+  font-size: 1.25rem;
+}
+
+.pricing-card__desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.pricing-card__price {
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.pricing-card__price-inner {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.pricing-card__currency {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  align-self: flex-start;
+  margin-top: 6px;
+}
+
+.pricing-card__amount {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.pricing-card__period {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-left: 4px;
+}
+
+.pricing-card__billed {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.pricing-card__cta {
+  width: 100%;
+  justify-content: center;
+}
+
+.pricing-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: auto;
+}
+
+.pricing-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.pricing-card__check {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
