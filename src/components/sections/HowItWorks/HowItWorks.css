@@ -1,0 +1,79 @@
+.how-it-works {
+  background: var(--color-bg-primary);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 2rem 1.75rem;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+/* Connector line (desktop only) */
+.step__connector {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .step:not(:last-child) .step__connector {
+    display: block;
+    position: absolute;
+    top: 36px;
+    right: -0.75rem;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--color-border-subtle);
+    z-index: 1;
+  }
+}
+
+.step__icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.step__number {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.step__title {
+  font-size: 1.0625rem;
+}
+
+.step__desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
