@@ -38,7 +38,6 @@ export default function Pricing() {
               aria-pressed={billing === 'annual'}
             >
               Annual
-              <span className="pricing__save-badge">Save 25%</span>
             </button>
             {billing === 'annual' && (
               <motion.div
@@ -57,6 +56,7 @@ export default function Pricing() {
               />
             )}
           </div>
+          <span className="pricing__save-badge">Save 25%</span>
         </AnimatedSection>
 
         <div className="pricing__grid">
